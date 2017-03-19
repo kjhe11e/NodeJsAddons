@@ -1,0 +1,12 @@
+{
+  "name": "string-to-int-addon",
+  "version": "0.0.1",
+  "description": "Node.js addon example",
+  "main": "index.js",
+  "dependencies": {
+    "nan": "^2.0.0"
+  },
+  "scripts": {
+    "test": "node index.js"
+  }
+}
