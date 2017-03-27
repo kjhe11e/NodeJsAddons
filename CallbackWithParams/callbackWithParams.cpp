@@ -15,9 +15,18 @@ void CallThis(const FunctionCallbackInfo<Value>& args) {
   return;   //undefined is returned to JS
 }
 
-//called when function is require'd in JS
-void Init(Local<Object> exports) {
-  NODE_SET_METHOD(exports, "callThis", CallThis);
+void CallThisWithThis(const FunctionCallbackInfo<Value>& args) {
+  Isolate* isolate = args.GetIsolate();
+  Local<Function> cb = Local<Function>::Cast(args[0]);
+
+  //create an array with only the argument passed in (i.e. the message)
+  Local<Value> argv[1] = {args[1]};
+  cb->Call(Null(isolate), 1, argv);
 }
 
-NODE_MODULE(callback, Init)   //macro
+void Init(Local<Object> exports, Local<Object> module) {
+  NODE_SET_METHOD(exports, "callThis", CallThis);
+  NODE_SET_METHOD(exports, "callThisWithThis", CallThisWithThis);
+}
+
+NODE_MODULE(callbackWithParams, Init)   //macro
