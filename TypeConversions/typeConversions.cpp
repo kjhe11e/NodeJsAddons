@@ -18,12 +18,18 @@ void PassNumber(const FunctionCallbackInfo<Value>& args) {
 
 void ReverseStr(const FunctionCallbackInfo<Value>& args) {
   Isolate* isolate = args.GetIsolate();
-  v8::String::Utf8Value s(args[0]);
-  std::string str(*s);  //wrap in c++
-  std::reverse(str.begin(), str.end());
+  if(!args[0]->IsString()) {
+    isolate->ThrowException(Exception::TypeError(
+      String::NewFromUtf8(isolate, "Input must be a string")
+    ));
+  } else {
+    v8::String::Utf8Value s(args[0]);
+    std::string str(*s);  //wrap in c++
+    std::reverse(str.begin(), str.end());
 
-  Local<String> reversedString = String::NewFromUtf8(isolate, str.c_str());
-  args.GetReturnValue().Set(reversedString);
+    Local<String> reversedString = String::NewFromUtf8(isolate, str.c_str());
+    args.GetReturnValue().Set(reversedString);
+  }
 }
 
 // Called when addon is require'd from JS
