@@ -32,4 +32,4 @@ void Init(Local<Object> exports) {
   NODE_SET_METHOD(exports, "reverseStr", ReverseStr);
 }
 
-NODE_MODULE(passNumber, Init)  // macros
+NODE_MODULE(typeConversions, Init)  // macros
