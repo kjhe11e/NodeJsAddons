@@ -11,3 +11,8 @@ console.log("Modified value (+10) is " + returnedNum);
 console.log("String is Hello");
 var str = typeConversions.reverseStr("Hello");
 console.log("Reversed string is " + str);
+
+var arr = [1, 2, 3];
+console.log("Array is " + arr);
+typeConversions.incrementArray(arr);
+console.log("Array after incrementing is " + arr);

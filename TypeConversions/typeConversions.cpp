@@ -32,10 +32,23 @@ void ReverseStr(const FunctionCallbackInfo<Value>& args) {
   }
 }
 
+void IncrementArray(const FunctionCallbackInfo<Value>& args) {
+  Isolate* isolate = args.GetIsolate();
+  Local<Array> arr = Local<Array>::Cast(args[0]);
+
+  for(unsigned int i = 0; i < arr->Length(); i++) {
+    double value = arr->Get(i)->NumberValue();
+    arr->Set(i, Number::New(isolate, value + 1));
+  }
+  // Since objects (and arrays) are mutable, these changes will be reflected
+  // even if we don't explicitly return
+}
+
 // Called when addon is require'd from JS
 void Init(Local<Object> exports) {
   NODE_SET_METHOD(exports, "passNumber", PassNumber);
   NODE_SET_METHOD(exports, "reverseStr", ReverseStr);
+  NODE_SET_METHOD(exports, "incrementArray", IncrementArray);
 }
 
 NODE_MODULE(typeConversions, Init)  // macros
