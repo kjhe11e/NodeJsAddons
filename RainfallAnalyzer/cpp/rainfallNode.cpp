@@ -48,9 +48,30 @@ void AvgRainfall(const v8::FunctionCallbackInfo<v8::Value>& args) {
   args.GetReturnValue().Set(returnVal);
 }
 
+void GetRainfallData(const v8::FunctionCallbackInfo<v8::Value>& args) {
+  Isolate* isolate = args.GetIsolate();
+
+  location loc = unpackLocation(isolate, args);
+  rainResult result = calculateRainStats(loc);
+
+  // create new object on V8 heap
+  Local<Object> obj = Object::New(isolate);
+  obj->Set(String::NewFromUtf8(isolate, "mean"),
+    Number::New(isolate, result.mean));
+  obj->Set(String::NewFromUtf8(isolate, "median"),
+    Number::New(isolate, result.median));
+  obj->Set(String::NewFromUtf8(isolate, "standardDeviation"),
+    Number::New(isolate, result.standardDeviation));
+  obj->Set(String::NewFromUtf8(isolate, "n"),
+    Number::New(isolate, result.n));
+
+  args.GetReturnValue().Set(obj);   //return the object to JS
+}
+
 void Init(Handle<Object> exports, Handle<Object> module) {
   //register our functions here...
   NODE_SET_METHOD(exports, "avgRainfall", AvgRainfall);
+  NODE_SET_METHOD(exports, "getRainfallData", GetRainfallData);
 }
 
 //macro to associate module name with initialization logic

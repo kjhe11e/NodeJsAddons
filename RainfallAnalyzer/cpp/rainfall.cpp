@@ -10,3 +10,37 @@ double avgRainfall(location& loc) {
 
   return total / loc.samples.size();
 }
+
+bool operator<(const sample &s1, const sample &s2) {
+  return s1.rainfall < s2.rainfall;
+}
+
+rainResult calculateRainStats(location& loc) {
+  rainResult result;
+  double ss = 0;
+  double total = 0;
+
+  result.n = loc.samples.size();
+
+  for(const auto &sample : loc.samples) {
+    total += sample.rainfall;
+  }
+
+  result.mean = total / loc.samples.size();
+
+  for(const auto &sample : loc.samples) {
+    ss += pow(sample.rainfall - result.mean, 2);
+  }
+
+  result.standardDeviation = sqrt(ss / (result.n-1));
+
+  std::sort(loc.samples.begin(), loc.samples.end());
+  if(result.n % 2 == 0) {
+    result.median = (loc.samples[result.n / 2 - 1].rainfall +
+      loc.samples[result.n / 2].rainfall) / 2;
+  }
+  else {
+    result.median = loc.samples[result.n / 2].rainfall;
+  }
+  return result;
+}

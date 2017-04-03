@@ -24,4 +24,14 @@ public:
   vector<sample> samples;
 };
 
+class rainResult {
+public:
+  float median;
+  float mean;
+  float standardDeviation;
+  int n;
+};
+
+bool operator<(const sample &s1, const sample &s2);
 double avgRainfall(location& loc);
+rainResult calculateRainStats(location& loc);
