@@ -1,6 +1,6 @@
 #include <node.h>
 #include <v8.h>
-#include <uv.h>
+#include <algorithm>
 #include "rainfall.h"
 
 using namespace v8;
@@ -18,17 +18,17 @@ sample unpackSample(Isolate* isolate, const Handle<Object> sampleObject) {
   return s;
 }
 
-location unpackLocation(Isolate* isolate, const v8::FunctionCallbackInfo<v8::Value> & args) {
+location unpackLocation(Isolate* isolate, const Handle<Object> locationObj) {
   location loc;
-  Handle<Object> locObject = Handle<Object>::Cast(args[0]);
+  //Handle<Object> locObject = Handle<Object>::Cast(args[0]);
 
-  Handle<Value> latValue = locObject->Get(String::NewFromUtf8(isolate, "latitude"));
-  Handle<Value> lonValue = locObject->Get(String::NewFromUtf8(isolate, "longitude"));
+  Handle<Value> latValue = locationObj->Get(String::NewFromUtf8(isolate, "latitude"));
+  Handle<Value> lonValue = locationObj->Get(String::NewFromUtf8(isolate, "longitude"));
 
   loc.latitude = latValue->NumberValue();
   loc.longitude = lonValue->NumberValue();
 
-  Handle<Array> arr = Handle<Array>::Cast(locObject->Get(String::NewFromUtf8(isolate, "samples")));
+  Handle<Array> arr = Handle<Array>::Cast(locationObj->Get(String::NewFromUtf8(isolate, "samples")));
 
   int sampleCount = arr->Length();
   for(int i = 0; i < sampleCount; i++) {
@@ -38,20 +38,30 @@ location unpackLocation(Isolate* isolate, const v8::FunctionCallbackInfo<v8::Val
   return loc;
 }
 
+void packRainResult(v8::Isolate* isolate, v8::Local<v8::Object>& target, rainResult & result) {
+  target->Set(String::NewFromUtf8(isolate, "mean"), Number::New(isolate, result.mean));
+  target->Set(String::NewFromUtf8(isolate, "median"), Number::New(isolate, result.median));
+  target->Set(String::NewFromUtf8(isolate, "standardDeviation"), Number::New(isolate, result.standardDeviation));
+  target->Set(String::NewFromUtf8(isolate, "n"), Number::New(isolate, result.n));
+}
+
 void AvgRainfall(const v8::FunctionCallbackInfo<v8::Value>& args) {
   Isolate* isolate = args.GetIsolate();
 
-  location loc = unpackLocation(isolate, args);
+  //location loc = unpackLocation(isolate, args);
+  Handle<Object> locObject = Handle<Object>::Cast(args[0]);
+  location loc = unpackLocation(isolate, locObject);
   double avg = avgRainfall(loc);
 
   Local<Number> returnVal = v8::Number::New(isolate, avg);
   args.GetReturnValue().Set(returnVal);
 }
 
-void GetRainfallData(const v8::FunctionCallbackInfo<v8::Value>& args) {
+void GetSingleLocationRainfallData(const v8::FunctionCallbackInfo<v8::Value>& args) {
   Isolate* isolate = args.GetIsolate();
 
-  location loc = unpackLocation(isolate, args);
+  Handle<Object> locObject = Handle<Object>::Cast(args[0]);
+  location loc = unpackLocation(isolate, locObject);
   rainResult result = calculateRainStats(loc);
 
   // create new object on V8 heap
@@ -68,10 +78,42 @@ void GetRainfallData(const v8::FunctionCallbackInfo<v8::Value>& args) {
   args.GetReturnValue().Set(obj);   //return the object to JS
 }
 
+void GetAllRainfallData(const v8::FunctionCallbackInfo<v8::Value>& args) {
+  Isolate* isolate = args.GetIsolate();
+  std::vector<location> locations;
+  std::vector<rainResult> results;
+
+  Local<Array> input = Local<Array>::Cast(args[0]);
+  unsigned int numLocations = input->Length();
+  for(unsigned int i = 0; i < numLocations; i++) {
+    locations.push_back(unpackLocation(isolate, Local<Object>::Cast(input->Get(i))));
+  }
+
+  results.resize(locations.size());
+  std::transform(
+    locations.begin(),
+    locations.end(),
+    results.begin(),
+    calculateRainStats
+  );
+
+  //convert rainResults into Objects for return
+  Local<Array> resultList = Array::New(isolate);
+  for(unsigned int i = 0; i < results.size(); i++) {
+    Local<Object> result = Object::New(isolate);
+    packRainResult(isolate, result, results[i]);
+    resultList->Set(i, result);
+  }
+
+  //return the list
+  args.GetReturnValue().Set(resultList);
+}
+
 void Init(Handle<Object> exports, Handle<Object> module) {
   //register our functions here...
   NODE_SET_METHOD(exports, "avgRainfall", AvgRainfall);
-  NODE_SET_METHOD(exports, "getRainfallData", GetRainfallData);
+  NODE_SET_METHOD(exports, "getSingleLocationRainfallData", GetSingleLocationRainfallData);
+  NODE_SET_METHOD(exports, "getAllRainfallData", GetAllRainfallData);
 }
 
 //macro to associate module name with initialization logic
