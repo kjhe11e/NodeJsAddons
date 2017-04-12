@@ -1,6 +1,7 @@
 This repo tracks my progress learning how to make NodeJs addons written in C/C++.
 
-=========*Using node-gyp*==========
+========= *Using node-gyp* ==========
+
 To run an application:
 
 1) cd to the program's directory (e.g. MathAddon)
@@ -12,11 +13,11 @@ To run an application:
 4) Run 'node {main.js file}' to execute the program (e.g. 'node index.js')
 
 
-==========*Using Nan and CMake*==========
+========== *Using Nan and CMake* ==========
 
 CMake and Nan is a viable combination for creating NodeJs addons. IntelliJ's CLion IDE supports CMake.
 
-// TODO: currently syntax highlighting is not configured in CLion for Nan.
+##### TODO: currently syntax highlighting is not configured in CLion for Nan.
 
 -- Install cmake-js:
 
@@ -30,7 +31,7 @@ The CMakeLists.txt file is CMake's version of node-gyp's binding.gyp file.
 
 An example CMakeLists.txt file: 
 
--------------------------------------------------
+```
 cmake_minimum_required(VERSION 3.5)
 
 # name of project, will be name of plugin
@@ -52,8 +53,6 @@ target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_JS_INC})
 
 # essential library files to link to a node addon
 # add this line to every CMake.js based project
-target_link_libraries(${PROJECT_NAME} ${CMAKE_JS_LIB})
--------------------------------------------------
-
+target_link_libraries(${PROJECT_NAME} ${CMAKE_JS_LIB}) ```
 
 
