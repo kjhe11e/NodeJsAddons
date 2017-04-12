@@ -5,3 +5,5 @@
 *.jar
 *.xml
 *.log
+*.cpp.o
+*.node

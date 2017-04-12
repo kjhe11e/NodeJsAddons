@@ -14,10 +14,24 @@ NAN_METHOD(PassNumber) {
         info.GetReturnValue().Set(returnVal);
 }
 
+NAN_METHOD(PassString) {
+        v8::String::Utf8Value val(info[0]->ToString());
+        std::string str(*val);
+        str = str + " test";
+
+        info.GetReturnValue().Set(
+            Nan::New<String>(str.c_str()).ToLocalChecked());
+}
+
 NAN_MODULE_INIT(Init) {
         Nan::Set(target,
             New<String>("PassNumber").ToLocalChecked(),
             GetFunction(New<FunctionTemplate>(PassNumber))
+            .ToLocalChecked());
+
+        Nan::Set(target,
+            New<String>("PassString").ToLocalChecked(),
+            GetFunction(New<FunctionTemplate>(PassString))
             .ToLocalChecked());
 }
 
