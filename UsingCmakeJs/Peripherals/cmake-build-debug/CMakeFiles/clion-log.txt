@@ -1,0 +1,4 @@
+/opt/clion-2017.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/cmake-build-debug

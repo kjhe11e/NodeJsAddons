@@ -1,0 +1,3 @@
+/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/rebuild_cache.dir
+/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/edit_cache.dir
+/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/Peripherals.dir

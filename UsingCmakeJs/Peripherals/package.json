@@ -1,0 +1,9 @@
+{
+  "name": "Peripherals",
+  "version": "1.0.0",
+  "description": "NodeJs addons using CMakeJs",
+  "dependencies": {
+    "cmake-js": "^3.4.1",
+    "nan": "^2.6.1"
+  }
+}

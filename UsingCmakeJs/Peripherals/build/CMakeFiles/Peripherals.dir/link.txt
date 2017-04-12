@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -std=c++11 -O3 -DNDEBUG  -shared -Wl,-soname,Peripherals.node -o Release/Peripherals.node CMakeFiles/Peripherals.dir/src/id_scanner.cpp.o 
