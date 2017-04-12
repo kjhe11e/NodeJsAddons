@@ -7,3 +7,5 @@
 *.log
 *.cpp.o
 *.node
+*.CXX.includecache
+
