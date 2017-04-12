@@ -7,6 +7,9 @@ project(Peripherals)
 file(GLOB SOURCE_FILES "src/*.cpp" "src/*.h")
 add_library(${PROJECT_NAME} SHARED ${SOURCE_FILES})
 
+# needed to resolve nan.h library
+include_directories(${CMAKE_JS_INC} ../nan)
+
 # give library file a .node extension without any "lib" prefix
 set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "" SUFFIX ".node")
 

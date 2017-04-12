@@ -28,28 +28,28 @@ The CXX compiler identification is GNU, found in "/home/khe11e/Dev/NodeJsAddons/
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cd91f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cd91f.dir/build.make CMakeFiles/cmTC_cd91f.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c524d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c524d.dir/build.make CMakeFiles/cmTC_c524d.dir/build
 make[1]: Entering directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cd91f.dir/testCCompiler.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_cd91f.dir/testCCompiler.c.o   -c /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_cd91f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd91f.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_cd91f.dir/testCCompiler.c.o  -o cmTC_cd91f 
+Building C object CMakeFiles/cmTC_c524d.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_c524d.dir/testCCompiler.c.o   -c /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_c524d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c524d.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_c524d.dir/testCCompiler.c.o  -o cmTC_c524d 
 make[1]: Leaving directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0b161/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0b161.dir/build.make CMakeFiles/cmTC_0b161.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_6dd85/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6dd85.dir/build.make CMakeFiles/cmTC_6dd85.dir/build
 make[1]: Entering directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0b161.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_0b161.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_0b161
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b161.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTC_0b161.dir/CMakeCCompilerABI.c.o  -o cmTC_0b161  
+Building C object CMakeFiles/cmTC_6dd85.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_6dd85.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_6dd85
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6dd85.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_6dd85.dir/CMakeCCompilerABI.c.o  -o cmTC_6dd85  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -59,8 +59,8 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0b161' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxgwaWg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_0b161 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_0b161.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6dd85' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cco7mifM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_6dd85 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_6dd85.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
 
 
@@ -68,14 +68,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_0b161/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_0b161.dir/build.make CMakeFiles/cmTC_0b161.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_6dd85/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_6dd85.dir/build.make CMakeFiles/cmTC_6dd85.dir/build]
   ignore line: [make[1]: Entering directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_0b161.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_0b161.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_0b161]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b161.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_0b161.dir/CMakeCCompilerABI.c.o  -o cmTC_0b161  ]
+  ignore line: [Building C object CMakeFiles/cmTC_6dd85.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_6dd85.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_6dd85]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6dd85.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_6dd85.dir/CMakeCCompilerABI.c.o  -o cmTC_6dd85  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0b161' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxgwaWg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_0b161 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_0b161.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6dd85' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cco7mifM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_6dd85 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_6dd85.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccxgwaWg.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cco7mifM.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -108,7 +108,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_0b161] ==> ignore
+    arg [cmTC_6dd85] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -120,7 +120,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_0b161.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_6dd85.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -154,14 +154,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c0bad/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c0bad.dir/build.make CMakeFiles/cmTC_c0bad.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ad0b0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ad0b0.dir/build.make CMakeFiles/cmTC_ad0b0.dir/build
 make[1]: Entering directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c0bad.dir/feature_tests.c.o
-/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_c0bad.dir/feature_tests.c.o   -c /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c0bad
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0bad.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_c0bad.dir/feature_tests.c.o  -o cmTC_c0bad 
+Building C object CMakeFiles/cmTC_ad0b0.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_ad0b0.dir/feature_tests.c.o   -c /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_ad0b0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad0b0.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_ad0b0.dir/feature_tests.c.o  -o cmTC_ad0b0 
 make[1]: Leaving directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
 
 
@@ -174,14 +174,14 @@ make[1]: Leaving directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Periphera
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_92c90/fast"
-/usr/bin/make -f CMakeFiles/cmTC_92c90.dir/build.make CMakeFiles/cmTC_92c90.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_6bf17/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6bf17.dir/build.make CMakeFiles/cmTC_6bf17.dir/build
 make[1]: Entering directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_92c90.dir/feature_tests.c.o
-/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_92c90.dir/feature_tests.c.o   -c /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_92c90
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92c90.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_92c90.dir/feature_tests.c.o  -o cmTC_92c90 
+Building C object CMakeFiles/cmTC_6bf17.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_6bf17.dir/feature_tests.c.o   -c /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_6bf17
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6bf17.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_6bf17.dir/feature_tests.c.o  -o cmTC_6bf17 
 make[1]: Leaving directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
 
 
@@ -194,14 +194,14 @@ make[1]: Leaving directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Periphera
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5dbf7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5dbf7.dir/build.make CMakeFiles/cmTC_5dbf7.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_52539/fast"
+/usr/bin/make -f CMakeFiles/cmTC_52539.dir/build.make CMakeFiles/cmTC_52539.dir/build
 make[1]: Entering directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5dbf7.dir/feature_tests.c.o
-/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_5dbf7.dir/feature_tests.c.o   -c /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_5dbf7
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5dbf7.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_5dbf7.dir/feature_tests.c.o  -o cmTC_5dbf7 
+Building C object CMakeFiles/cmTC_52539.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_52539.dir/feature_tests.c.o   -c /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_52539
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52539.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_52539.dir/feature_tests.c.o  -o cmTC_52539 
 make[1]: Leaving directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
 
 
@@ -212,28 +212,28 @@ make[1]: Leaving directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Periphera
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_45403/fast"
-/usr/bin/make -f CMakeFiles/cmTC_45403.dir/build.make CMakeFiles/cmTC_45403.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_45800/fast"
+/usr/bin/make -f CMakeFiles/cmTC_45800.dir/build.make CMakeFiles/cmTC_45800.dir/build
 make[1]: Entering directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_45403.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -std=c++11    -o CMakeFiles/cmTC_45403.dir/testCXXCompiler.cxx.o -c /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_45403
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45403.dir/link.txt --verbose=1
-/usr/bin/c++   -std=c++11     CMakeFiles/cmTC_45403.dir/testCXXCompiler.cxx.o  -o cmTC_45403 
+Building CXX object CMakeFiles/cmTC_45800.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -std=c++11    -o CMakeFiles/cmTC_45800.dir/testCXXCompiler.cxx.o -c /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_45800
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45800.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11     CMakeFiles/cmTC_45800.dir/testCXXCompiler.cxx.o  -o cmTC_45800 
 make[1]: Leaving directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3d2ef/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3d2ef.dir/build.make CMakeFiles/cmTC_3d2ef.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c139d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c139d.dir/build.make CMakeFiles/cmTC_c139d.dir/build
 make[1]: Entering directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_3d2ef.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -std=c++11    -o CMakeFiles/cmTC_3d2ef.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_3d2ef
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d2ef.dir/link.txt --verbose=1
-/usr/bin/c++   -std=c++11    -v CMakeFiles/cmTC_3d2ef.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3d2ef  
+Building CXX object CMakeFiles/cmTC_c139d.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -std=c++11    -o CMakeFiles/cmTC_c139d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_c139d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c139d.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11    -v CMakeFiles/cmTC_c139d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c139d  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -243,8 +243,8 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-std=c++11' '-v' '-o' 'cmTC_3d2ef' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCvBeQA.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_3d2ef /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_3d2ef.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-std=c++11' '-v' '-o' 'cmTC_c139d' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cclItgd6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_c139d /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_c139d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
 
 
@@ -252,14 +252,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_3d2ef/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_3d2ef.dir/build.make CMakeFiles/cmTC_3d2ef.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_c139d/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_c139d.dir/build.make CMakeFiles/cmTC_c139d.dir/build]
   ignore line: [make[1]: Entering directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_3d2ef.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -std=c++11    -o CMakeFiles/cmTC_3d2ef.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_3d2ef]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d2ef.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++   -std=c++11    -v CMakeFiles/cmTC_3d2ef.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3d2ef  ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_c139d.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -std=c++11    -o CMakeFiles/cmTC_c139d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_c139d]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c139d.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++   -std=c++11    -v CMakeFiles/cmTC_c139d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c139d  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -269,13 +269,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-std=c++11' '-v' '-o' 'cmTC_3d2ef' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCvBeQA.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_3d2ef /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_3d2ef.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-std=c++11' '-v' '-o' 'cmTC_c139d' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cclItgd6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_c139d /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_c139d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccCvBeQA.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cclItgd6.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -292,7 +292,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_3d2ef] ==> ignore
+    arg [cmTC_c139d] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -304,7 +304,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_3d2ef.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_c139d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -336,14 +336,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7618a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7618a.dir/build.make CMakeFiles/cmTC_7618a.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_36b84/fast"
+/usr/bin/make -f CMakeFiles/cmTC_36b84.dir/build.make CMakeFiles/cmTC_36b84.dir/build
 make[1]: Entering directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7618a.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++11    -std=c++14 -o CMakeFiles/cmTC_7618a.dir/feature_tests.cxx.o -c /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_7618a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7618a.dir/link.txt --verbose=1
-/usr/bin/c++   -std=c++11     CMakeFiles/cmTC_7618a.dir/feature_tests.cxx.o  -o cmTC_7618a 
+Building CXX object CMakeFiles/cmTC_36b84.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11    -std=c++14 -o CMakeFiles/cmTC_36b84.dir/feature_tests.cxx.o -c /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_36b84
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36b84.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11     CMakeFiles/cmTC_36b84.dir/feature_tests.cxx.o  -o cmTC_36b84 
 make[1]: Leaving directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
 
 
@@ -409,14 +409,14 @@ make[1]: Leaving directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Periphera
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a92a6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a92a6.dir/build.make CMakeFiles/cmTC_a92a6.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_275ba/fast"
+/usr/bin/make -f CMakeFiles/cmTC_275ba.dir/build.make CMakeFiles/cmTC_275ba.dir/build
 make[1]: Entering directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a92a6.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++11    -std=c++11 -o CMakeFiles/cmTC_a92a6.dir/feature_tests.cxx.o -c /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_a92a6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a92a6.dir/link.txt --verbose=1
-/usr/bin/c++   -std=c++11     CMakeFiles/cmTC_a92a6.dir/feature_tests.cxx.o  -o cmTC_a92a6 
+Building CXX object CMakeFiles/cmTC_275ba.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11    -std=c++11 -o CMakeFiles/cmTC_275ba.dir/feature_tests.cxx.o -c /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_275ba
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_275ba.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11     CMakeFiles/cmTC_275ba.dir/feature_tests.cxx.o  -o cmTC_275ba 
 make[1]: Leaving directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
 
 
@@ -482,14 +482,14 @@ make[1]: Leaving directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Periphera
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cf6a9/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cf6a9.dir/build.make CMakeFiles/cmTC_cf6a9.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ccec0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ccec0.dir/build.make CMakeFiles/cmTC_ccec0.dir/build
 make[1]: Entering directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_cf6a9.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++11    -std=c++98 -o CMakeFiles/cmTC_cf6a9.dir/feature_tests.cxx.o -c /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_cf6a9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf6a9.dir/link.txt --verbose=1
-/usr/bin/c++   -std=c++11     CMakeFiles/cmTC_cf6a9.dir/feature_tests.cxx.o  -o cmTC_cf6a9 
+Building CXX object CMakeFiles/cmTC_ccec0.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11    -std=c++98 -o CMakeFiles/cmTC_ccec0.dir/feature_tests.cxx.o -c /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ccec0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccec0.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11     CMakeFiles/cmTC_ccec0.dir/feature_tests.cxx.o  -o cmTC_ccec0 
 make[1]: Leaving directory '/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/build/CMakeFiles/CMakeTmp'
 
 

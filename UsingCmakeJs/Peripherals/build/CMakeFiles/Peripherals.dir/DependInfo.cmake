@@ -12,6 +12,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/khe11e/.cmake-js/node-x64/v6.9.4/include/node"
   "../node_modules/nan"
+  "../../nan"
   )
 
 # Targets to which this target links.

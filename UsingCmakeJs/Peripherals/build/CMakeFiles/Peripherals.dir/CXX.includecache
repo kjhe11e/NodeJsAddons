@@ -303,6 +303,8 @@ features.h
 /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/src/id_scanner.cpp
 nan.h
 -
+iostream
+-
 id_scanner.h
 /home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/src/id_scanner.h
 

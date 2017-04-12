@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11 -O3 -DNDEBUG -fPIC
 
 CXX_DEFINES = -DPeripherals_EXPORTS
 
-CXX_INCLUDES = -I/home/khe11e/.cmake-js/node-x64/v6.9.4/include/node -I/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/node_modules/nan 
+CXX_INCLUDES = -I/home/khe11e/.cmake-js/node-x64/v6.9.4/include/node -I/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/node_modules/nan -I/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/../nan 
 

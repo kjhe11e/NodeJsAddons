@@ -3,6 +3,7 @@
 
 #include <nan.h>
 
-//methods here
+//method signatures here
+//void method(const Nan::FunctionCallbackInfo<v8::Value>& info);
 
 #endif

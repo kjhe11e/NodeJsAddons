@@ -6,5 +6,5 @@ CXX_FLAGS = -g -fPIC
 
 CXX_DEFINES = -DPeripherals_EXPORTS
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/khe11e/Dev/NodeJsAddons/UsingCmakeJs/Peripherals/../nan 
 
