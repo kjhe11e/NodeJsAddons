@@ -1,6 +1,7 @@
 #include <nan.h>
 #include <iostream>
 #include <vector>
+#include <string>
 #include "id_scanner.h"
 
 using namespace std;
@@ -25,8 +26,13 @@ NAN_METHOD(PassString) {
 }
 
 string getStatusMessage(int statusCode, vector<string>& messages) {
-    // TODO: error checking here...
-    return messages[statusCode];
+    // TODO: improve error checking here...
+    if(statusCode > messages.size()) {
+        return "ERROR - status code " + to_string(statusCode) + " does not exist";
+    }
+    else {
+        return messages[statusCode];
+    }
 }
 
 NAN_METHOD(GetStatus) {
