@@ -1,4 +1,6 @@
-This repo tracks my progress learning how to make NodeJs addons written in C/C++.
+A cumulative learning of building NodeJs addons written in C/C++.
+
+#### Note: Node has deprecated `Nan` in favor of `N-API` -- [relevant docs](https://nodejs.org/api/addons.html)
 
 ========= *Using node-gyp* ==========
 
@@ -6,22 +8,22 @@ To run an application:
 
 1) cd to the program's directory (e.g. MathAddon)
 
-2) Run 'node-gyp configure'
+2) Run `node-gyp configure`
 
-3) Run 'node-gyp build'
+3) Run `node-gyp build`
 
-4) Run 'node {main.js file}' to execute the program (e.g. 'node index.js')
+4) Run `node __main.js_file__` to execute the program, e.g. `node index.js`
 
 
 ========== *Using Nan and CMake* ==========
 
 CMake and Nan is a viable combination for creating NodeJs addons. IntelliJ's CLion IDE supports CMake.
 
-##### TODO: currently syntax highlighting is not configured in CLion for Nan.
 
 -- Install cmake-js:
-
-Run 'npm install cmake-js'
+```
+ npm install cmake-js
+```
 
 -- Basic project structure:
 
